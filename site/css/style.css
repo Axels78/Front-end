@@ -1,0 +1,10 @@
+h1,p {
+    color: blue;
+}
+#plus{
+    color: rgb(214, 16, 16);
+}
+body{
+    margin: 0;
+    background-color: blanchedalmond;
+}

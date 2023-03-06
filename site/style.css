@@ -1,0 +1,78 @@
+h1,p {
+    color: blue;
+    font-size: 14pt;
+    text-align: center;
+}
+#plus{
+    color: rgb(214, 16, 16);
+}
+.jaune {
+    position: relative;
+    bottom: 5px;
+    left: 3em;
+    background-color:#ffff00;
+}
+.verte {
+    background-color: #00ff00;
+   }
+   
+:not(p){
+    color: coral;
+}
+p:first-child{
+    color: rgb(47, 202, 68);
+}
+p:last-child{
+    color: chocolate;
+}
+h1{
+    font-family: Verdana, sans-serif
+}
+div{
+    border-top-width: medium;
+    border-width: 5px; 
+    border-style : solid;
+    border-color: blue;
+    border-radius: 15px; 
+    box-shadow : 10px 5 px 5px red;
+    text-shadow : 10px 10px 20px pink;
+}
+body
+{
+ background-color: whitesmoke;
+}
+#centre
+{
+ margin: 1em 25%;
+ background-color: #FFF;
+}
+#gauche
+{
+ position: absolute;
+ top: 1em;
+ left: 1%;
+ width: 18%;
+}
+#droite
+{
+ position: absolute;
+ top: 1em;
+ right: 1%;
+ width: 18%;
+}
+.aqua
+{
+ background-color: #00FFFF; /* aqua */
+} 
+.left
+{
+ float: left;
+ width: 31.33%;
+ background-color: #00ff00;
+ margin: 1%;
+ height: 500px;
+ overflow: auto;
+}
+ul{
+    overflow: auto;
+}
