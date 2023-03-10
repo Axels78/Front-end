@@ -1,0 +1,12 @@
+.container{
+    border: solid black;
+}
+.col-8{
+background-color: aqua;
+}
+.row{
+    border: solid blue;
+}
+.col-sm{
+    border: solid burlywood;
+}
