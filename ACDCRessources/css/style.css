@@ -1,0 +1,139 @@
+body {
+    background: linear-gradient(90deg, black 60%, red 42%);
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+
+a {
+    color: red;
+    font-style: red;
+}
+
+
+h4 {
+    text-align: center;
+    margin: 1em;
+    color: azure;
+}
+#index{
+    size: 85%;
+    padding: 0;
+    margin: 0;
+}
+.row{
+    margin: 0;
+}
+#form {
+    height: 200px;
+    border: solid whitesmoke;
+    padding: 2px;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    background-color: black;
+    background: linear-gradient(90deg, black 60%, red 40%);
+    text-align: center;
+    position: relative;
+    width: 500px;
+    margin: 50px auto 100px auto;
+}
+
+#agenda {
+    display: flex;
+    justify-content: center;
+    height: auto;
+}
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+
+#membres {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: auto;
+    margin: auto;
+}
+
+.imgb {
+    height: 200px;
+    width: 200px;
+    border: 20px;
+    margin: .5em;
+}
+
+.imgc {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+
+}
+
+
+.container1 {
+
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: auto;
+
+}
+
+figcaption {
+    color: azure;
+}
+.navimg {
+    width: 6em;
+    padding-right: 0;
+    margin-right: 3em;
+    background-color: transparent;
+    color: transparent;
+}
+
+.navbar-dark {
+    color: black;
+    background-color: black;
+    width: 75%;
+}
+
+.case-disc {
+    background-color: aliceblue;
+    width: 50rem;
+    margin: 0 5px 5px 5px;
+}
+.img-disco {
+    width: 18rem;
+}
+
+.col-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    padding: auto;
+    align-items: center;
+
+}
+
+.table {
+
+    color: aliceblue;
+    width: 70%;
+    align-items: center;
+}
+.carousel-item{
+    padding:0;
+    size: 80%;
+
+}
+.carousel-item-active{
+    padding: 0;
+    size: 80%;
+}
