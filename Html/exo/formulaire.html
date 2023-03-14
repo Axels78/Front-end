@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+</head>
+<body>
+    <form action="http://bienvu.net/script.php" method="get">
+        <label for="lname">Last name: </label>
+        <input type="text" name="nom" size="50" maxlength="50" value="Axel Soto"id="lname">
+        <label for="fname">First name:</label>
+        <input type="text" name="prénom" id="fname">
+        <input type="submit" value="envoyer">
+        <input type="radio" name="radio" id="test" disabled>
+    </form><br>
+    <textarea name="commentaire" rows="5" cols="30">XML (Extensible Markup Language, ou Langage Extensible de Balisage) 
+        est le langage destiné à succéder à HTML sur le World Wide Web. Comme HTML (Hypertext Markup Language
+    </textarea><br>
+    <input type="checkbox" name="couleur1" value="Bleu" checked> Bleu
+    <input type="checkbox" name="couleur2" value="Rouge"> Rouge
+    <input type="checkbox" name="couleur3" value="Vert"> Vert<br>
+    <input type="radio" name="couleur" value="Bleu"> Bleu
+    <input type="radio" name="couleur" value="Rouge"> Rouge
+    <input type="radio" name="couleur" value="Vert" checked="checked"> Vert<br>
+    <select name="try hard" size="3" multiple="multiple">
+        <option value="noir">noir</option>
+        <option value="blanc">blanc</option>
+        <option value="gris">gris</option>
+    </select>
+    <fieldset>
+        <legend>Détails :</legend>
+        Nom: <input type="text"><br>
+        Email: <input type="text"><br>
+        Date de naissance: <input type="text">
+    </fieldset>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h2><b>Quelque balise HTML</b></h2>
+            <ol>
+                <li><b>La balise B</b></li>
+                    <ul><li>Exemple d'emploi:<code><B>ce texte est en gras</B></code></li></ul>
+                    <ul>Effet dans le navigateur:<b>ce texte est en gras</b></ul>
+                <li><b>La balise I</b></li>
+                    <ul>Exemple d'emploi:<i>ce texte est en italique</i></ul>
+                    <ul>Effet dans le navigateur:<i>ce texte est en italique</i></ul>
+                <li><b>La balise U</b></li>
+                    <ul>Exemple d'emploi:<u>ce texte est souligné</u></ul>
+                    <ul>Effet dans le naviqateur:<u>ce texte est souligné</u></ul>
+
+            </ol>
+</body>
+</html>

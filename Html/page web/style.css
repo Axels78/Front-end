@@ -1,0 +1,23 @@
+body
+{
+    background-color: yellowgreen;
+    text-align: center;
+}
+h1
+{
+    color: brown;
+    text-overflow: clip;
+}
+p
+{
+    text-align: center;
+    color: brown;
+}
+section
+{
+    color: rgb(156, 149, 42);
+}
+.rouge
+{
+    color: rgb(30, 20, 170);
+}

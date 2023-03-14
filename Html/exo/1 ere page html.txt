@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+</head>
+<title>Ceci est ma première page html</title>
+<body>
+<h1>Le HTML 5</h1>
+<p>Le langage HTML, c'est fantastique.</p>
+</body>

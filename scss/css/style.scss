@@ -1,0 +1,10 @@
+$main-color:blue;
+$secondary-color:yellow;
+  body, h1, h2, span, a, li{
+    color: $main-color;
+  }
+  h1{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: $secondary-color;
+  }

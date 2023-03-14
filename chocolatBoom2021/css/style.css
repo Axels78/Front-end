@@ -1,0 +1,165 @@
+.container{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/***************logo header**************/
+#logo{
+    align-items: center;
+    display: block;
+    border: 10px;
+    margin: auto;
+    border-radius: 5px;
+}
+/**************contenu***************/
+body {
+    background-color: darkcyan;
+
+    
+    
+
+  }
+  main {
+    display: flex;
+    box-sizing: border-box;
+    gap:1em;
+    
+  }
+  h1 {
+    margin: 0.67em 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.4em;
+  }
+
+  h2 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.4em;
+    background-color: brown;
+    border-radius: 10px;
+    margin:1px;
+  }
+
+  h3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.4em;
+  }
+  section{
+    width: 70%;
+    text-align: center;
+    background-color:steelblue;
+    margin: 5px;
+    font-size: 100%;
+    
+   }
+   .choco{
+    width: 70%;
+    justify-content:flex-start;
+    border-radius: 10px;
+    align-items:center;
+   }
+
+  aside {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 0;
+    margin: 5px;
+    border: 0;
+    width:30%;
+    flex-flow: column;
+    
+  }
+  img {
+    border-style: none;
+    align-items: center;
+  }
+  /*****************nav******************/
+  nav {
+    display: flex;
+    font-size: 1.6em;
+    text-align: center;
+    margin: 0.5%;
+    justify-content: space-evenly;
+    background-color: brown;
+    align-items: center;
+
+  }
+  a{
+    border: solid;
+
+  }
+  /***************************Responsive*******************/
+  /*************tablette petit pc************/
+
+  @media (max-width:992px){
+    a{
+        font-size: 2rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    h2{
+        font-size:1.9rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    img
+    {
+    max-width: 85%;
+    height: auto;
+    }
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
+    section{
+        width: 100%;
+    }
+    
+    aside{
+        width: 100%;
+    }
+    body{
+        align-content: center;
+    }
+    }
+    /**********smartphone*************/
+
+@media (max-width:576px) {
+a{
+    font-size: 1.25rem;
+}
+h1{
+    font-size: 1rem;
+}
+h2{
+    font-size:1.2rem;
+}
+p{
+    font-size: 0.90rem;
+}
+img
+{
+max-width: 75%;
+height: auto;
+}
+#logo{
+    max-width: 55%;
+}
+.container{
+    display: flex;
+    flex-direction:column;
+    align-content: center;
+    align-items: center;
+}
+section{
+    width: 100%;
+}
+
+aside{
+    width: 100%;
+}
+}
