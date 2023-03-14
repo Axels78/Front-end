@@ -23,13 +23,14 @@ h4 {
 #index{
     size: 85%;
     padding: 0;
-    margin: 0;
+    margin-top: 6rem;
 }
 .row{
     margin: 0;
 }
 #form {
     height: 200px;
+    margin-top: 6rem;
     border: solid whitesmoke;
     padding: 2px;
     align-items: center;
@@ -45,6 +46,7 @@ h4 {
 
 #agenda {
     display: flex;
+    margin-top: 6rem;
     justify-content: center;
     height: auto;
 }
@@ -55,6 +57,7 @@ h4 {
 
 #membres {
     display: flex;
+    margin-top: 6rem;
     flex-direction: column;
     align-items: center;
     padding: auto;

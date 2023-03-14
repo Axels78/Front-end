@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+.imgco{
+    height: 200px;
+    width: 200px;
+    border: 20px;
+    margin: .5em;
+}
+#navi{
+    display: flex;
+
+}
+.histg{
+    background-color: aliceblue;
+}
+.linkb{
+    border: solid rgb(196, 209, 81);
+    background-color: greenyellow;
+}
+.navi{
+    display: flex;
+    flex-direction: row;
+}
+.linkn:visited{
+
+}
+li.nav-item{
+    list-style: none;
+}
