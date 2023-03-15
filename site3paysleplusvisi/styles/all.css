@@ -1,0 +1,42 @@
+body{
+    font-family: 'PT Sans Narrow', sans-serif;
+    width: 90%;
+    align-items:center ;
+    justify-content: center;
+    margin: auto;
+    border: 0;
+    
+    overflow: auto;
+    
+
+    
+}
+/*****************Ma nav**********************/
+
+nav{
+    width: 100%;
+    border-radius:12px ;
+    padding-right: 15em;
+    margin: auto;
+    text-align: center;
+    box-shadow: 10px 5px 5px grey;
+    justify-content: center;
+    width: 75%;
+    justify-content: center !important;
+    align-items: center !important;
+    align-content: space-between;  
+}
+#navbarNav{
+    display: flex;
+    justify-content: center;
+   /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,232,208,0.9780287114845938) 35%, rgba(0,212,255,1) 100%);*/
+}
+/***************footer************/
+footer{
+
+    border: solid ;
+    text-align: center;
+    border: solid black .5px;
+    border-radius: 12px;
+}

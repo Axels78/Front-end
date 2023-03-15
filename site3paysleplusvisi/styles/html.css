@@ -1,0 +1,17 @@
+.imgc {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    height: 35em;
+    width: 35em;
+
+}
+#id{
+    margin-top: 8em;
+}
+#france{
+    align-content: center;
+    text-align: center;
+    margin-top: 9em;
+}
