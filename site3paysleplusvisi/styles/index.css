@@ -1,8 +1,6 @@
 /**************Contenue****************/
 .def{
-    background-image:url("../images/imagetouri.png");
-    background-size:cover;
-    background-repeat: no-repeat;
+    
     background-position: center;
     border-radius: 12px;
     color:black;
@@ -12,13 +10,20 @@
 #introt{
     display: flex;
     flex-direction:column;
-    margin-top: 8em;
+    margin-top: 10em;
     justify-content: center;
     align-content: center;
 }
 #main{
     text-justify: auto;
     
+}
+.backg{
+    background-image:url("../images/fondacc.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
 }
 h1{
     margin: 0.67em 0;

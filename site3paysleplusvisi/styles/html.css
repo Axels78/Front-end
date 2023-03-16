@@ -1,3 +1,35 @@
+/**********pages france*************/
+#fr{
+    background-image: url(../images/towerfr.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.frflex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: azure;
+}
+.flexifr1{
+    display: flex;
+    flex-direction:column;
+    width: 40%;
+
+    margin: 3em;
+}
+.flexifr2{
+    display: flex;
+    flex-direction:column;
+    width: 40%;
+    margin: 3em;
+
+}
+.frc{
+    color: azure;
+    margin-bottom: 5em;
+}
+
 .imgc {
     display: flex;
     margin-left: auto;
@@ -7,11 +39,34 @@
     width: 35em;
 
 }
-#id{
-    margin-top: 8em;
-}
+
 #france{
     align-content: center;
     text-align: center;
     margin-top: 9em;
 }
+.footfr{
+    color: azure;
+    border: solid azure 0.5px;
+}
+.imgfr{
+    width:30em;
+    height:30em;
+    border-radius: 12px;
+}
+/**************page espagne****************/
+#esp{
+    background-image: url(../images/espagne/espagne.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#espagne{
+    margin-top: 9em;
+    align-content: center;
+    text-align: center;
+
+    border-radius: 12px;
+}
+
+/**************page usa***********/
