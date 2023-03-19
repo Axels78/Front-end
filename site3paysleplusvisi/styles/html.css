@@ -70,3 +70,14 @@
 }
 
 /**************page usa***********/
+#usa{
+    background-image: url(../images/etatsunis/statusf2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#usa1{
+    align-content: center;
+    text-align: center;
+    margin-top: 9em;
+}

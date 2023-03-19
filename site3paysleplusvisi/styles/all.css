@@ -40,3 +40,43 @@ footer{
     border: solid black .5px;
     border-radius: 12px;
 }
+/**************média**************/
+@media (max-width:1200px){
+
+}
+@media (max-width:768px){
+
+}
+@media (max-width:550px){
+    a{
+        font-size: 1.25rem;
+    }
+    h1{
+        font-size: 1rem;
+    }
+    h2{
+        font-size:1.2rem;
+    }
+    p{
+        font-size: 0.90rem;
+    }
+    img
+    {
+    max-width: 75%;
+    height: auto;
+    }
+   
+    .container{
+        display: flex;
+        flex-direction:column;
+        align-content: center;
+        align-items: center;}
+    #navc{
+        max-width: 55%;
+    }
+    body{
+        width: 100%;
+        align-content: center;
+    }
+
+}

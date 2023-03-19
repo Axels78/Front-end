@@ -16,6 +16,7 @@
 }
 #main{
     text-justify: auto;
+    margin: 4em;
     
 }
 .backg{
@@ -39,6 +40,16 @@ h2{
 }
 #main{
     align-items: center;
+}
+table,th,td{
+  border: 1px solid;
+  justify-content: center;
+}
+#tab{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
 }
 /*****************Podium*****************/
 .podium{
