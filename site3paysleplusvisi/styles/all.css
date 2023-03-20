@@ -1,82 +1,249 @@
-body{
+body {
     font-family: 'PT Sans Narrow', sans-serif;
     width: 90%;
-    align-items:center ;
+    align-items: center;
     justify-content: center;
     margin: auto;
     border: 0;
-    
-    overflow: auto;
-    
 
-    
+    overflow: auto;
+
+
+
 }
+
 /*****************Ma nav**********************/
 
-nav{
+nav {
     width: 100%;
-    border-radius:12px ;
+    border-radius: 12px;
     padding-right: 15em;
     margin: auto;
     text-align: center;
     box-shadow: 10px 5px 5px grey;
     justify-content: center;
     width: 75%;
-    justify-content: center !important;
-    align-items: center !important;
-    align-content: space-between;  
+    
+    align-content: space-between;
 }
-#navbarNav{
+
+.imgn {
+    width: 8rem;
+    height: 6.5rem;
+}
+
+#navbarNav {
     display: flex;
     justify-content: center;
-   background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(231,232,208,0.9780287114845938) 35%, rgba(0,212,255,1) 100%);
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(231, 232, 208, 0.9780287114845938) 35%, rgba(0, 212, 255, 1) 100%);
 }
-/***************footer************/
-footer{
 
-    border: solid ;
+/***************footer************/
+footer {
+
+    border: solid;
     text-align: center;
     border: solid black .5px;
     border-radius: 12px;
+    margin-bottom: 10px;
 }
+
 /**************média**************/
-@media (max-width:1200px){
+@media (max-width:1200px) {}
+/******************************************************************moyenne écran *****************************************************/
+@media (max-width:913px) {
+    
+    iframe {
+        height: auto;
+        width: auto;
+    }
+    #france{
+        width: 100%;
+       }
+       #usa1{
+        width: 100%;
+       }
+       #espagne{
+        width: 100%;
+       }
+       #main{
+        width: 100%;
+       }
+    h1 {
+        font-size: 1.8rem !important;
+        width: 80%;
+        text-align: center;
+        font-weight: bold;
+    }
 
-}
-@media (max-width:768px){
+    h2 {
+        font-size: 1rem !important;
+        text-align: center;
+    }
 
+    p {
+        font-size: 1.2rem;
+    }
+
+    #navc {
+        max-width: 25%;
+    }
+    #navbar{
+        display: flex;
+        flex-direction: row;
+    }
+
+    body {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgn {
+        width: 3rem;
+        height: 2.5rem;
+    }
+    /***************changement du contenue en mode colonne afin que cela prenne plus d'espace sur l écran**********/
+    .frflex {
+        display: flex;
+        flex-direction: column !important;
+        align-content: center;
+        width: 100% !important;
+    
+    }
+    
+    .flexifr1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto !important;
+    
+    }
+    
+    .flexifr2 {
+        display: flex;
+        flex-direction: column;
+        align-content: center !important;
+        width: auto !important;
+        
+    }
+    /*************image des contenues*****************/
+    .imgfr{
+        width: auto;
+        height: auto;
+        align-items: center;
+        text-align: center;
+    }
+    .frc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        color:cornsilk!important;
+        font-style: oblique;
+       justify-content: center;
+    }
 }
-@media (max-width:550px){
-    a{
-        font-size: 1.25rem;
+/*****************************************************************ptit écran****************************************************************/
+@media (max-width:550px) {
+ 
+    h1 {
+        font-size: 1.5rem !important;
+        width: 80%;
+        text-align: center;
+        font-weight: bold;
     }
-    h1{
-        font-size: 1rem;
+
+    h2 {
+        font-size: 1rem !important;
+        text-align: center;
     }
-    h2{
-        font-size:1.2rem;
-    }
-    p{
+
+    p {
         font-size: 0.90rem;
     }
-    img
-    {
-    max-width: 75%;
-    height: auto;
+
+    #navc {
+        max-width: 25%;
     }
-   
-    .container{
+    #navbar{
         display: flex;
-        flex-direction:column;
-        align-content: center;
-        align-items: center;}
-    #navc{
-        max-width: 55%;
-    }
-    body{
-        width: 100%;
-        align-content: center;
+        flex-direction: row;
     }
 
+    body {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imgn {
+        width: 2.5rem;
+        height: 2rem;
+    }
+   /**************france espagne usa****************/
+   #france{
+    width: 100%;
+   }
+   #usa1{
+    width: 100%;
+   }
+   #espagne{
+    width: 100%;
+   }
+   #main{
+    width: 100%;
+   }
+
+   iframe {
+    height: auto;
+    width: auto;
+}
+
+.imgfr {
+    height: 20rem !important;
+    width: 20rem !important;
+}
+
+.frflex {
+    display: flex;
+    flex-direction: column !important;
+    align-content: center;
+    width: 100% !important;
+
+}
+
+.flexifr1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto !important;
+
+}
+
+.flexifr2 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: auto !important;
+    
+}
+.imgfr{
+    width: auto;
+    height: auto;
+}
+.frc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    color:cornsilk!important;
+    font-style: oblique;
+   justify-content: center;
+}
 }
