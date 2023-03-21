@@ -23,7 +23,7 @@ nav {
     box-shadow: 10px 5px 5px grey;
     justify-content: center;
     width: 75%;
-    
+
     align-content: space-between;
 }
 
@@ -35,8 +35,8 @@ nav {
 #navbarNav {
     display: flex;
     justify-content: center;
-    background: rgb(2, 0, 36);
-    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(231, 232, 208, 0.9780287114845938) 35%, rgba(0, 212, 255, 1) 100%);
+    background: rgb(224, 219, 17);
+    background: radial-gradient(circle, rgba(224, 219, 17, 1) 0%, rgba(208, 225, 232, 0.9780287114845938) 38%, rgba(0, 212, 255, 1) 100%);
 }
 
 /***************footer************/
@@ -50,14 +50,7 @@ footer {
 }
 
 /**************média**************/
-@media (max-width:1200px) {}
-/******************************************************************moyenne écran *****************************************************/
-@media (max-width:913px) {
-    
-    iframe {
-        height: auto;
-        width: auto;
-    }
+@media (max-width:1281px) {
     #france{
         width: 100%;
        }
@@ -68,8 +61,40 @@ footer {
         width: 100%;
        }
        #main{
+        width: 100% !important;
+       }
+       body{
+        width: 90% ;
+       }
+       p{
         width: 100%;
        }
+}
+
+/******************************************************************moyenne écran *****************************************************/
+@media (max-width:913px) {
+
+    iframe {
+        height: auto;
+        width: auto;
+    }
+
+    #france {
+        width: 100%;
+    }
+
+    #usa1 {
+        width: 100%;
+    }
+
+    #espagne {
+        width: 100%;
+    }
+
+    #main {
+        width: 100%;
+    }
+
     h1 {
         font-size: 1.8rem !important;
         width: 80%;
@@ -89,7 +114,8 @@ footer {
     #navc {
         max-width: 25%;
     }
-    #navbar{
+
+    #navbar {
         display: flex;
         flex-direction: row;
     }
@@ -105,55 +131,59 @@ footer {
         width: 3rem;
         height: 2.5rem;
     }
+
     /***************changement du contenue en mode colonne afin que cela prenne plus d'espace sur l écran**********/
     .frflex {
         display: flex;
         flex-direction: column !important;
         align-content: center;
         width: 100% !important;
-    
+
     }
-    
+
     .flexifr1 {
         display: flex;
         flex-direction: column;
         justify-content: center;
         width: auto !important;
-    
+
     }
-    
+
     .flexifr2 {
         display: flex;
         flex-direction: column;
         align-content: center !important;
         width: auto !important;
-        
+
     }
+
     /*************image des contenues*****************/
-    .imgfr{
+    .imgfr {
         width: auto;
         height: auto;
         align-items: center;
         text-align: center;
     }
-    .frc{
+
+    .frc {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         align-content: center;
-        color:cornsilk!important;
+        color: cornsilk !important;
         font-style: oblique;
-       justify-content: center;
+        justify-content: center;
     }
 }
+
 /*****************************************************************ptit écran****************************************************************/
 @media (max-width:550px) {
-    .coloru{
-        color:azure !important;
+    .coloru {
+        color: azure !important;
     }
-    
- 
+
+
     h1 {
         font-size: 1.5rem !important;
         width: 80%;
@@ -173,7 +203,8 @@ footer {
     #navc {
         max-width: 25%;
     }
-    #navbar{
+
+    #navbar {
         display: flex;
         flex-direction: row;
     }
@@ -189,65 +220,71 @@ footer {
         width: 2.5rem;
         height: 2rem;
     }
-   /**************france espagne usa****************/
-   #france{
-    width: 100%;
-   }
-   #usa1{
-    width: 100%;
-   }
-   #espagne{
-    width: 100%;
-   }
-   #main{
-    width: 100%;
-   }
 
-   iframe {
-    height: auto;
-    width: auto;
-}
+    /**************france espagne usa****************/
+    #france {
+        width: 100%;
+    }
 
-.imgfr {
-    height: 20rem !important;
-    width: 20rem !important;
-}
+    #usa1 {
+        width: 100%;
+    }
 
-.frflex {
-    display: flex;
-    flex-direction: column !important;
-    align-content: center;
-    width: 100% !important;
+    #espagne {
+        width: 100%;
+    }
 
-}
+    #main {
+        width: 100%;
+    }
 
-.flexifr1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: auto !important;
+    iframe {
+        height: auto;
+        width: auto;
+    }
 
-}
+    .imgfr {
+        height: 20rem !important;
+        width: 20rem !important;
+    }
 
-.flexifr2 {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    width: auto !important;
-    
-}
-.imgfr{
-    width: auto;
-    height: auto;
-}
-.frc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    color:cornsilk!important;
-    font-style: oblique;
-   justify-content: center;
-}
+    .frflex {
+        display: flex;
+        flex-direction: column !important;
+        align-content: center;
+        width: 100% !important;
+
+    }
+
+    .flexifr1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto !important;
+
+    }
+
+    .flexifr2 {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        width: auto !important;
+
+    }
+
+    .imgfr {
+        width: auto;
+        height: auto;
+    }
+
+    .frc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        color: cornsilk !important;
+        font-style: oblique;
+        justify-content: center;
+    }
 }

@@ -29,8 +29,10 @@
     display: flex;
     flex-direction: column;
     color:black;
+    align-items: center;
     margin-bottom: 5em;
     text-align: center;
+    justify-content: center;
    
 }
 
@@ -50,14 +52,15 @@
     margin-top: 9em;
 }
 .footfr{
-    color:black;
+    color:cornsilk;
     border: solid cornsilk; 0.5px;
+
 }
 .imgfr{
     width:30em;
     height:30em;
     border-radius: 12px;
-
+    align-items: center;
 }
 /**************page espagne****************/
 #esp{

@@ -3,21 +3,23 @@
     
     background-position: center;
     border-radius: 12px;
-    color:cornsilk;
-    
-    padding: 5px;    
+    color:black;
+    font-weight: bold;
+    padding: 15px;    
 }
 #introt{
     display: flex;
+    padding: 15px;
     flex-direction:column;
     margin-top: 10em;
     justify-content: center;
     align-content: center;
-    color:cornsilk;
+    color:whitesmoke;
 }
 #main{
     text-justify: auto;
     margin: 4em;
+    align-items: center;
     
 }
 .backg{
@@ -39,9 +41,7 @@ h2{
     font-size: 1.75em;
     text-align: center;
 }
-#main{
-    align-items: center;
-}
+
 table,th,td{
   border: 1px solid;
   justify-content: center;
