@@ -145,7 +145,7 @@ for (let i = 1; i <= N; i++) {
   let multiple = i * X;
   console.log(i + " x " + X + " = " + multiple);
 }
-/**************************exo 8*********** */
+/**************************exo 8*********** *
 let mot = prompt("Entrez un mot :");
 let voyelles = ["a", "e", "i", "o", "u", "y"]; // tableau des voyelles
 let compteur = 0;
@@ -158,8 +158,8 @@ for (let i = 0; i < mot.length; i++) {
   }
 }
 
-console.log("Le mot " + mot + " contient " + compteur + " voyelles.");*/
-/**********************************exo9********* */
+console.log("Le mot " + mot + " contient " + compteur + " voyelles.");
+/**********************************exo9********* *
 var age;
 var jeunes=0;
 var moyen=0;
@@ -181,9 +181,62 @@ while (age < 100);
 console.log("nombres de jeunes :"+jeunes);
 console.log("nombre de personne d age moyen:"+moyen);
 console.log("nombre de vieux:"+vieux);
-/****************************exo10************** */
+/****************************exo10************** *
 var nb;
 var div;
 if{
 
 }
+**********************exo compté voyelle *******
+var mot=prompt("saisir un mot");
+var count=0;
+for(i=0;i<mot.length;i++){
+console.log(mot[i]);
+if(mot[i]=="a"){
+  count++;
+}
+}
+console.log("nombre de voyelles dans le mot"+mot+": "+count);
+/*************exo 10*************** *
+var nbr=("saisir votre nombre");
+if (nbr <= 1) {
+  console.log(nbr + " n'est pas un nombre premier.");
+} else if (nbr <= 3) {
+  console.log(nbr + " est un nombre premier.");
+} else if (nbr % 2 == 0 || nbr % 3 == 0) {
+  console.log(nbr + " n'est pas un nombre premier.");
+} else {
+  let estPremier = true;
+  for (let i = 5; i * i <= nbr; i = i + 6) {
+    if (nbr % i == 0 || nbr % (i + 2) == 0) {
+      estPremier = false;
+      break;
+    }
+  }
+  if (estPremier) {
+    console.log(nbr + " est un nombre premier.");
+  } else {
+    console.log(nbr + " n'est pas un nombre premier.");
+  }
+}
+/***********exo 11***************** */
+var nombreAleatoire = Math.floor(Math.random() * 100) + 1;
+var nombreEssais = 0;
+
+
+while(nombreUtilisateur!=nombreAleatoire){
+  var nombreUtilisateur = prompt("Devinez le nombre entre 1 et 100:");
+  nombreUtilisateur = Number(nombreUtilisateur);
+if(nombreUtilisateur===nombreAleatoire){
+  alert("Bravo, vous avez trouvé le nombre magique en " + nombreEssais + " essais !");
+  break;
+}
+if (nombreUtilisateur < nombreAleatoire) {
+  alert("Trop petit, essayez encore !");
+} else {
+  alert("Trop grand, essayez encore !");
+}
+
+nombreEssais++;
+}
+
