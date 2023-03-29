@@ -22,7 +22,7 @@ console.log(prenom);
         <button>afficher</button>
 
     </div>
-/****************question 4 *************/
+/****************question 4 *************
 document.querySelector('p').textContent = '1er paragraphe du document';
 let documentDiv = document.querySelector('div');
 documentDiv.querySelector('p').textContent = '1er paragraphe du premier div';
@@ -41,3 +41,5 @@ let paras = document.getElementsByTagName('p');
 for(valeur of paras){
     valeur.style.color = 'blue';
 }
+document.querySelector('div').innerHTML +='<ul><li>Elément n°1</li><li>Elément n°2</li></ul>';*/
+var mytableau=[];
