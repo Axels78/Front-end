@@ -6,7 +6,7 @@ while(saisie!=0){
 
 tableau.push(saisie);
 }
-var nb=tableau.length;
+
 for(var i=0;i<tableau.length;i++){
     console.log("fruit et légumes : "+tableau[i]);
     document.getElementById('superdiv').innerHTML+="<p>"+tableau[i]+"</p>";
