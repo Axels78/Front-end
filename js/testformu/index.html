@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Intercepte la validation du formulaire</h2>
+    <form id="form1" name="form1" onSubmit="return checkForm(this);" method="post" action="traitement.php">
+        <div class="form">
+        <label for="name">nom :</label>
+        <input type="text" name="nom" value="" required minlength="1"/>
+        </div>
+        <div class="form">
+        <label for="prenom">prénom :</label>
+        <input type="text" name="prenom" value="" required minlength="1"/>
+        </div>
+        <div class="form">
+        <label for="Personeaconta">Personne à contacter :</label>
+        <input type="text" name="Personeaconta" required minlength="1" value="" />
+        </div>
+        <div class="form">
+        <label for="adresse">Adresse de l'entreprise</label>
+         <textarea id="adresse" name="adresse" rows="5" cols="25"></textarea><br>
+        </div>
+        <div class="form">
+        <label for="cp">Code postal :</label>
+        <input type="number" name="cp" value="" required minlength="5" />
+        </div>
+        <div>
+        <label for="ville">Ville :</label>
+        <input type="text" name="ville" value="" required minlength="1"/>
+        </div>
+        <div class="form">
+        <label for="e-mail">e-mail :</label>
+        <input type="text" name="email" value="" required="@"/>
+        </div>
+        <div class="form">
+        <label for="num">numéro :</label>
+        <input type="number" name="num" value="" />
+        </div>
+        <div class="form">
+        <label for="choisissez"></label>
+        <select id="" name="" defaultValue="choisir">
+            <optgroup label="" >
+                <option value="choisissez"></option>
+                <option value=""></option>
+                <option value="" selected></option>
+            </optgroup>
+        </select>
+         <label for="adresse">selectionner l'environement technique du projet</label>
+         <textarea id="adresse" name="adresse" rows="5" cols="25"></textarea><br>
+        </div>
+        <div class="form">
+        <input type="submit" id="idSubForm1" name="subForm1" value="Envoyer" />
+        <input type="submit" id="idSubForm1" name="subForm1" value="éffacé" />
+    </div>
+    </form>
+
+
+
+
+
+
+
+    <script src="formu.js"></script>
+</body>
+
+</html>
