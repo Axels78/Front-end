@@ -1,4 +1,4 @@
-var btn = document.getElementById('btn');
+var btn = document.getElementsByClassName('button')[0];
 btn.addEventListener('click', ChargeInfosJson());
 
 function ChargeInfosJson() {
