@@ -1,0 +1,24 @@
+{
+    "name":"Chez Mario et Luigi",
+    "slogan":"Pizzaiolo de pére en fils",
+    "Pizza":[
+        {
+            "nom":"la cheese lover",
+            "image":"https://i0.wp.com/weirdandwildpizza.com/wp-content/uploads/2021/10/MAIN-2.jpg?resize=740%2C416&ssl=1",
+            "prix":"11.90",
+            "Ingrédients":["Babybel","ficello","leerdammer","kiri","chedar"]
+        },
+        {
+            "nom":"la hawaienne",
+            "image":"https://www.galbani.fr/wp-content/uploads/2020/03/AdobeStock_216290053-800x600.jpeg",
+            "prix":"11.90",
+            "Ingrédients":["annanas","fruit de la passion","mangue","kiri","poulet","chedar"]
+        },
+        {
+            "nom":"la Regina",
+            "image":"https://gustopresto.com/drive/lattes/298-home_default/pizza-regina.jpg",
+            "prix":"11.90",
+            "Ingrédients":["Babybel","ficello","tomate","mozza","jambon"]
+        }
+    ]
+}
