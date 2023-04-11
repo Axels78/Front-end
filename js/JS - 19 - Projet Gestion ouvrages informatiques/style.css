@@ -1,0 +1,22 @@
+#bookslist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img {
+    width: 160px;
+}
+
+.card h1 {
+    font: 14px;
+}
+
+.card h2 {
+    font: 12px;
+}
+
+.card h4 {
+    font: 10px;
+}
