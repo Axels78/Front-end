@@ -4,7 +4,7 @@ body{
     background-color:darkgray;
     color: white;
     cursor: url("images/gifcurseur.gif"),auto;
-    width: 80%;
+    width: 100%;
     justify-content: center;
     align-items: center;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -65,3 +65,116 @@ footer{
 #infospers{
     width: 70%;
 }
+/**********************transition/animation***************************/
+  a {
+    color: #fff;
+    background-color: #333;
+    transition: all 3s ease-out;
+    border-radius: 10px;
+  }
+  
+  a:hover,
+  a:focus {
+    color: yellow !important;
+    background-color: black !important;
+
+  }
+  /*******************chargement de ma page*************************/
+  .loader {
+    border: 16px solid black;
+    border-top: 16px solid yellow;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 0.001s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    z-index: 9999;
+    display: none;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+/*******************test animation**********************/
+/* Styles pour la galerie */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 4em;
+  }
+  
+  /* Styles pour les éléments de la galerie */
+  .gallery-item {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-out;
+  }
+  
+  /* Styles pour la légende de la galerie */
+  .gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+  }
+  /*************sabre laser*******************/
+  .lightsaber {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    animation: appear 0.5s forwards;
+  }
+  
+  @keyframes appear {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  /****************btn ********************/
+  #rejoindre-la-rebellion {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #rejoindre-la-rebellion:hover {
+    background-color: #fff;
+    color: #1c1c1c;
+  }
+  

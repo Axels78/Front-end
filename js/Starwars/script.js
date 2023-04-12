@@ -153,45 +153,55 @@ function affiche(Records)
  fetchAPI('https://swapi.dev/api/',"people",false);
 
 // console.log(RecordsList);
-/****************************************************test fct film */
-function afficherNomsFilms() {
-    // Créer une requête HTTP
-    var xhr = new XMLHttpRequest();
-    // Ouvrir la requête HTTP
-    xhr.open("GET",'./fichierjson/Movie.json', true);
+/*********************************************************barre de recherche des personnages */
 
-    // Définir l'en-tête de la requête HTTP pour spécifier le type de contenu attendu
-    xhr.setRequestHeader("Content-Type", "application/json");
+/****************************************************test fct film **************************************************/
+/***********************animation transition****** */
+window.addEventListener('load', function() {
+    var loader = document.querySelector('.loader');
+    loader.style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+    var links = document.querySelectorAll('a');
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function(event) {
+        event.preventDefault();
+        var loader = document.querySelector('.loader');
+        loader.style.display = 'block';
+        var href = this.getAttribute('href');
+        setTimeout(function() {
+          window.location = href;
+        }, 2000);
+      });
+    }
+  });
+ /**************sabre laser fct*************** */
+ const lightsaber = document.querySelector('.lightsaber');
+let isPlaying = false;
 
-    // Répondre à l'événement de chargement de la requête HTTP
-    xhr.onload = function() {
-      if (xhr.status === 200) {
-        // Convertir le contenu JSON en objet JavaScript
-        var films = JSON.parse(xhr.responseText);
-
-        // Récupérer le conteneur HTML où les noms de films seront affichés
-        var conteneur = document.getElementById("liste-films").querySelector("ul");
-
-        // Boucle à travers chaque film et ajouter son nom au conteneur HTML
-        for (var i = 0; i < films.length; i++) {
-          var nomFilm = films[i].title;
-          var elementListe = document.createElement("li");
-          elementListe.innerHTML = nomFilm;
-          conteneur.appendChild(elementListe);
-        }
-      } else {
-        console.error(xhr.statusText);
-      }
-    };
-
-    // Gérer les erreurs de la requête HTTP
-    xhr.onerror = function() {
-      console.error(xhr.statusText);
-    };
-
-    // Envoyer la requête HTTP
-    xhr.send();
+document.addEventListener('mousemove', (event) => {
+  if (!isPlaying) {
+    const x = event.clientX;
+    const y = event.clientY;
+    lightsaber.style.top = `${y}px`;
+    lightsaber.style.left = `${x}px`;
   }
+});
 
-  // Appeler la fonction pour afficher les noms de films
-  afficherNomsFilms();
+lightsaber.addEventListener('mouseenter', () => {
+  isPlaying = true;
+  const audio = new Audio('lightsaber.mp3');
+  audio.play();
+});
+
+lightsaber.addEventListener('ended', () => {
+  isPlaying = false;
+});
+/***************bouton rebélion***************** */
+const rejoindreBtn = document.getElementById('rejoindre-la-rebellion');
+
+rejoindreBtn.addEventListener('click', () => {
+  // Ajouter ici votre code pour la fonctionnalité de votre bouton
+  alert('Vous avez rejoint la Rébellion !');
+});
