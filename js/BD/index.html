@@ -22,22 +22,22 @@
     </nav>
     <div id="search">
         <form class="d-flex" id="cherche" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <input class="form-control me-2" id="searchb" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         <div id="radiobtn">
             <input type="radio" id="title" name="categ" checked>
             <label for="title">Titre</label>
-            <input type="radio" id="alboum" name="categ">
+            <input type="radio" id="alboum" name="categ" onclick="afficherAlbums(albums)">
             <label for="alboum">Album</label>
-            <input type="radio" id="Seriz" name="categ">
+            <input type="radio" id="Seriz" name="categ" onclick="afficherAlbumsParSerie()">
             <label for="Seriz">Serie</label>
         </div>
         <div id="contenue">
             <img src="images/noComicsMini.jpeg" id="albumMini">
             <img src="images/noComics.jpeg" id="album">
 
-
+            
 
         </div>
     </div>

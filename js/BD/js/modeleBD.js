@@ -37,7 +37,7 @@ jQuery(document).ready(function ($) {
 	
 
 	
-	console.log("Liste des albums par auteur");
+	/*console.log("Liste des albums par auteur");
 	for(var [idAuteur, auteur] of auteurs.entries()) {
 	    // Recherche des albums de l'auteur
 	    for (var [idAlbum, album] of albums.entries()) {
