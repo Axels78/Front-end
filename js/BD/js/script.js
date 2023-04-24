@@ -1,5 +1,11 @@
 /****************************** */
-// Obtenez une référence à la balise div conteneur
+//recupération des boutons titre album et serie que lon selectionne
+let btnTitre=document.getElementById("title");
+let btnAlbum=document.getElementById("alboum");
+let btnSerie=document.getElementById("Seriz");
+/*********************************************foncion test pour afficher si je coche album */
+function afficherAlbums(albums) {
+    // Obtenez une référence à la balise div conteneur
 let contenueDiv = document.getElementById("contenue");
 
 // Bouclez à travers chaque album et créez une liste d'éléments HTML pour chaque album
@@ -13,23 +19,8 @@ albumsList += "</ul>";
 
 // Ajouter la liste des albums à la balise div conteneur
 contenueDiv.innerHTML = albumsList;
-//recupération des boutons titre album et serie que lon selectionne
-let btnTitre=document.getElementById("title");
-let btnAlbum=document.getElementById("alboum");
-let btnSerie=document.getElementById("Seriz");
-/*********************************************foncion test pour afficher si je coche album */
-function afficherAlbums(albums) {
-    let resultatsDiv = document.getElementById("contenue");
-    resultatsDiv.innerHTML = ""; // effacer le contenu précédent
-
-    albums.forEach(album => {
-        serie = series.get(album.idSerie);
-        auteur = auteurs.get(album.idAuteur);
-        let albumDiv = document.createElement("div");
-        albumDiv.textContent = album.titre+" N°"+album.numero+" Série:"+serie.nom+" Auteur:"+auteur.nom;
-        resultatsDiv.appendChild(albumDiv);
-    });
 }
+
 /******************************************************************************** */
 function afficherAlbumsParSerie() {
     var resultatDiv = document.getElementById("contenue");
@@ -62,15 +53,17 @@ function afficherAlbumsParSerie() {
         }
     }
 }
+
 //barre de recherche*************************************************************************************************
-document.getElementById("cherche").addEventListener("submit", function(event) {
-    // Empêcher le formulaire de se soumettre automatiquement
-    event.preventDefault();
+document.getElementById("boutoncher").addEventListener("click", function() {
 
     // Récupérer la valeur de la barre de recherche
-    const query = document.getElementById("searchb").value;
+    const valuecherche = document.getElementById("searchb").value;
 
     // Utiliser la valeur pour effectuer une recherche
     // Ici, nous allons simplement afficher la valeur dans la console
-    console.log(`Recherche : ${query}`);
+    console.log("Recherche : "+valuecherche);
   });
+  /******************************************************************** */
+  afficherAlbums(albums);
+  

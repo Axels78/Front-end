@@ -74,3 +74,15 @@ $(document).ready(function(){
     //On utilise html() comme setter
     $("#p2").html("<strong>Nouveau contenu !</strong>");
 });
+var app=Vue.createApp({
+    template : "<counter />",
+    });
+    app.component("counter",{
+    template : "Le compteur vaut : {{count}}",
+    data(){
+    return {
+    count: 0
+    }
+    }
+    })
+    var vm=app.mount("div#app");
