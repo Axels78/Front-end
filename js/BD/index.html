@@ -21,17 +21,21 @@
         </div>
     </nav>
     <div id="search">
-        <form class="d-flex" id="cherche" role="search">
+        
             <input class="form-control me-2" id="searchb" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+            <button class="btn btn-outline-success" id="boutoncher">Search</button>
+
         <div id="radiobtn">
-            <input type="radio" id="title" name="categ" checked>
-            <label for="title">Titre</label>
-            <input type="radio" id="alboum" name="categ" onclick="afficherAlbums(albums)">
+            <input type="radio" id="alboum" name="categ" onclick="afficherAlbums(albums)" checked>
             <label for="alboum">Album</label>
+
             <input type="radio" id="Seriz" name="categ" onclick="afficherAlbumsParSerie()">
             <label for="Seriz">Serie</label>
+            
+            <input type="radio" id="auteur" name="categ" >
+            <label for="auteur">Auteurs</label>
+            
+            
         </div>
         <div id="contenue">
             <img src="images/noComicsMini.jpeg" id="albumMini">
@@ -57,7 +61,7 @@
     <script src="data/albums.js"></script>
     <script src="data/series.js"></script>
     <script src="data/auteurs.js"></script>
-    <script src="js/modeleBD.js"></script>
+    
     <script src="js/script.js"></script>
 </body>
 
